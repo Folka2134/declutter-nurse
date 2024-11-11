@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
-// import Navbar from "components/Navbars/IndexNavbar.js";
-import Footer from "components/Footers/Footer.js";
-
-export default function Landing() {
+import Footer from "components/Footers/Footer";
+import { Link } from "react-router-dom/cjs/react-router-dom";
+const Testimonials = () => {
   return (
     <>
       <Navbar transparent />
@@ -562,4 +560,6 @@ export default function Landing() {
       <Footer />
     </>
   );
-}
+};
+
+export default Testimonials;

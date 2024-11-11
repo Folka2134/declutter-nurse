@@ -5,30 +5,22 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./styles/tailwind.css";
 
-// layouts
-
-import Admin from "layouts/Admin.js";
-import Auth from "layouts/Auth.js";
-
-// views without layouts
-
 import Landing from "views/Landing.js";
+import Services from "views/Services.js";
+import About from "views/About.js";
+import Testimonals from "views/Testimonials.js";
 import Profile from "views/Profile.js";
-import Index from "views/Index.js";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(
   <BrowserRouter>
     <Switch>
-      {/* add routes with layouts */}
-      <Route path="/admin" component={Admin} />
-      <Route path="/auth" component={Auth} />
-      {/* add routes without layouts */}
-      <Route path="/landing" exact component={Landing} />
+      <Route path="/" exact component={Landing} />
+      <Route path="/services" exact component={Services} />
+      <Route path="/about" exact component={About} />
+      <Route path="/testimonals" exact component={Testimonals} />
       <Route path="/profile" exact component={Profile} />
-      <Route path="/" exact component={Index} />
-      {/* add redirect for first page */}
       <Redirect from="*" to="/" />
     </Switch>
   </BrowserRouter>
