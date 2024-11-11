@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -16,7 +16,9 @@ import Landing from "views/Landing.js";
 import Profile from "views/Profile.js";
 import Index from "views/Index.js";
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
   <BrowserRouter>
     <Switch>
       {/* add routes with layouts */}
@@ -30,5 +32,4 @@ ReactDOM.render(
       <Redirect from="*" to="/" />
     </Switch>
   </BrowserRouter>,
-  document.getElementById("root")
 );
