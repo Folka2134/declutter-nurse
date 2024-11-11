@@ -42,26 +42,18 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <Link
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  to="/about"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="/testimonals"
                 >
                   Testimonials
                 </Link>
-              </li>
-              <li className="flex items-center">
-                <Link
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  to="/profile"
-                >
-                  Profile
-                </Link>
+                <li className="flex items-center">
+                  <Link
+                    className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    to="/about"
+                  >
+                    About Us
+                  </Link>
+                </li>
               </li>
               <li className="flex items-center">
                 <a
@@ -92,7 +84,7 @@ export default function Navbar(props) {
                   target="_blank"
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 fab fa-instagram text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Star</span>
+                  <span className="lg:hidden inline-block ml-2">Follow</span>
                 </a>
               </li>
             </ul>
