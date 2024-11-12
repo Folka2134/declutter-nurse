@@ -29,14 +29,14 @@ export default function FooterAdmin() {
                     Services
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     className="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3"
                     to="/testimonials"
                   >
                     Testimonials
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     className="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3"
