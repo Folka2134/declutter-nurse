@@ -41,7 +41,7 @@ export default function FooterAdmin() {
                     className="text-blueGray-600 hover:text-blueGray-800 text-sm font-semibold block py-1 px-3"
                     to="/about"
                   >
-                    About Us
+                    About
                   </Link>
                 </li>
               </ul>
