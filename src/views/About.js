@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "components/Footers/Footer";
+import FooterAdmin from "components/Footers/FooterAdmin";
 import Navbar from "components/Navbars/AuthNavbar";
 
 const About = () => {
@@ -96,7 +96,7 @@ const About = () => {
           </div>
         </section>
       </main>
-      <Footer />
+      <FooterAdmin />
     </>
   );
 };
